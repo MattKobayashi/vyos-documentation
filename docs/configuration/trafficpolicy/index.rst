@@ -912,7 +912,7 @@ In principle, values must be
 Rate Control
 ------------
 
-| **Queueing discipline:** Tocken Bucket Filter.
+| **Queueing discipline:** Token Bucket Filter.
 | **Applies to:** Outbound traffic.
 
 Rate-Control is a classless policy that limits the packet flow to a set
@@ -1054,7 +1054,7 @@ the higher the priority.
    <bytes>
 
    Use this command to configure a Shaper policy, set its name, define
-   a class and set the size of the `tocken bucket`_ in bytes, which will
+   a class and set the size of the `token bucket`_ in bytes, which will
    be available to be sent at ceiling speed (default: 15Kb).
 
 .. cfgcmd:: set qos policy shaper <policy-name> class <class-ID> ceiling
@@ -1217,7 +1217,7 @@ That is how it is possible to do the so-called "ingress shaping".
 
 .. _that can give you a great deal of flexibility: https://blog.vyos.io/using-the-policy-route-and-packet-marking-for-custom-qos-matches
 .. _tc: https://en.wikipedia.org/wiki/Tc_(Linux)
-.. _tocken bucket: https://en.wikipedia.org/wiki/Token_bucket
+.. _token bucket: https://en.wikipedia.org/wiki/Token_bucket
 .. _HFSC: https://en.wikipedia.org/wiki/Hierarchical_fair-service_curve
 .. _Intermediate Functional Block: https://www.linuxfoundation.org/collaborate/workgroups/networking/ifb
 
